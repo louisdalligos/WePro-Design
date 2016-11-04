@@ -1,0 +1,72 @@
+<div id="contact-section" class="section contact" style="background-color: #21292c">
+	<div class="ui container">
+
+		<div class="ui one column grid">
+      <div class="center aligned column">
+        <h2 class="title">Work with us</h2>
+
+        <p class="subtitle">We love to create something awesome together!</p>
+      </div>
+    </div>
+
+   	<div class="ui column grid centered">
+      <div class="ui row">
+
+      	<div class="seven wide computer six wide tablet sixteen wide phone left aligned column">
+
+      		<div id="form-result" data-notify-type="success" data-notify-close="true" data-notify-msg="<i class=check circle icon></i> Message Sent Successfully!"></div>
+
+      		<form method="post" action="include/sendemail.php" id="wepro-contact-form" class="ui form" data-sr>
+					  
+					  <div class="field">
+					    <input name="name" id="name" class="required form-control" type="text" placeholder="Your Name or Company" value="" tabindex="1">
+					  </div>
+
+					  <div class="field">
+					    <input name="email" id="email" class="required form-control" type="email" placeholder="Your Email" value="" tabindex="2">
+					  </div>
+					  
+					  <div class="ui form">
+						  <div class="field">
+						    <select name="type" id="type" class="required ui dropdown form-control" class="ui dropdown" name="type">
+						      <option value="">Type of project</option>
+						      <option value="design">Design</option>
+						      <option value="dev">HTML Markup</option>
+						      <option value="devdesign">Design &amp; Markup</option>
+						    </select>
+						  </div>
+					  </div>
+					  
+					  <div class="field">
+					    <input name="dropbox_url" id="dropbox_url" class="form-control" type="text" placeholder="Dropbox URL" value="" tabindex="3">
+					  </div>
+
+						<div class="field">
+							<textarea name="msg" id="msg" class="required form-control" placeholder="Tell us about your project" tabindex="4"></textarea>
+						</div>
+						
+						<input type="text" id="botcheck" name="botcheck" value="" class="ui hidden message" />
+
+					  <div class="ui submit inverted basic white button" tabindex="5">Submit</div>
+					</form>
+        </div>
+
+        <div class="seven wide computer six wide tablet sixteen wide phone aligned column" data-sr>
+        	<h3>Contact</h3>
+        	<address>
+        		Suite 340 <br />
+						1450 Columbia St <br />
+						Mableton, Georgia <br />
+						30126 <br />
+        	</address>
+     
+        	<a href="mailto:hello@wepro.co">hello@wepro.co</a>
+        </div>
+      </div>
+    </div>
+
+    
+    
+
+	</div>
+</div>

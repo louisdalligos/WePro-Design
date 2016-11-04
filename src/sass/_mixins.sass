@@ -1,0 +1,25 @@
+@mixin respond-to($breakpoint)
+	@media only screen and (min-width: $breakpoint)
+		@content
+
+// Responsive Breakpoints
+=breakpoint($point) 
+	@if $point == omega 
+		@media (min-width: 75em) // 1200px
+			@content
+
+	@if $point == large 
+		@media (min-width: 62em) // 992px
+			@content
+	
+	@else if $point == medium 
+		@media (min-width: 48em) // 768px
+			@content
+	
+	@if $point == small 
+		@media (min-width: 40em) // 640px
+			@content
+
+	@else if $point == alpha // 0
+		@media (min-width: 0) 
+			@content
